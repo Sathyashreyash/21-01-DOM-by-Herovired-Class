@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unorderd list</title>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li id="okay">4</li>
+        <li>5</li>
+    </ul>
+
+    <div id="main" class="first">Hello world</div>
+
+    <a href="www.herovired.com"></a>
+
+    <script>
+        var loc = document.querySelectorAll("ul li");  // (QuerySelector) This is kind of css were we can select the element and do over writting or design.
+        console.log(loc.length);
+        for(var i of loc){
+            // document.write(loc[i].innerHTML + "<br>");
+            // document.write(loc[i] + "<br>");
+            document.write(i.innerHTML + "<br>");
+        }
+
+        loc[2].style.color = "red"
+
+        // document.querySelector("#okay");
+        // loc.style.background = "blue"
+
+        var b = document.getElementById('main')
+
+    </script>
+</body>
+</html>

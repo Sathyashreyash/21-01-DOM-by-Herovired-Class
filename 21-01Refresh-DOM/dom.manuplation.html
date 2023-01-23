@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="v">This is para</p>
+    </div>
+    <script>
+        var el = document.createElement("p");
+        var txt = document.createTextNode('This is me');
+        el.appendChild(txt);
+
+        var loc = document.getElementById("p");
+        document.body.appendChild(el, loc);
+        var loc1 = document.getElementById("parent");
+        loc1.style.background = "yellow"
+
+        // how to remove existing child
+        // var pa = document.getElementById("parent")
+        // var child = document.getElementById("v")
+        // parent.removechild(child)
+
+        var child =  document.getElementById("v")
+        // child.parentNode.removeChild(child)
+
+    
+
+
+    </script>
+</body>
+
+</html>
